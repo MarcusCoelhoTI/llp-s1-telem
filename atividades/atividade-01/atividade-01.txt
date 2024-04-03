@@ -1,0 +1,32 @@
+O conhecimento e uso do Git e GitHub é fundamental para o profissional de Tecnologia da Informação. Seu uso principal é o controle de versionamento. Porém, será usado pelos alunos para criar repositórios onde ficam evidenciadas as atividades e avaliações da disciplina. Essa forma de uso permite ao aluno criar um portifólio onde é evidenciado o seu conhecimento em determinada tecnologia (Linguagem de Programação, Sistemas Operacionais, Redes de Computadores, etc.). O GitHub tem sido usado por recrutadores de empresas de TI para recrutar profissionais para participar de processos de seleção.
+
+O uso da ferramenta inicia com a criação da conta. Recomenda-se criar um nome de conta que remeta ao nome do proprietário. Exemplos: 
+a) Nome do proprietário: Ricardo Duarte Taveira. Conta: ricdtaveira;
+b) Nome do Proprietário: Maria Aline Sousa Bastos. Conta: masbastos;
+c) Nome do Proprietário: Joâo Antonio Oliveira Freitas. Conta: jaofreitas.
+
+Um repositório no GitHub é onde serão gravados os arquivos fontes de um projeto de software. No nosso caso o conteúdo de um repositório consistirá de pastas onde serão gravadas as atividades (exercícios, questionários, resumos, prints, etc) e avaliações. A avaliação terá o seu link gravado na entrega da mesma no Google Classroom permitindo o professor acessar diretamente o registro feito no GitHub. 
+
+Recomenda-se criar o nome de repositório usando o nome dado a disciplina registrado no Google Classroom. Exemplos:
+a) Banco de Dados P4 INFO: bd-p4-info;
+b) Sistemas Operacionais de Redes 2 INFO: sor2-p8-info;
+c) Linguagem e Lógica de Programação TELEMATICA: llp-s1-telem;
+d) Programação Orientada a Objeto ENGENHARIA DA COMPUTAÇÃO: poo-s1-ec;
+
+A seguinte estrutura de pastas deverá ser seguida no repositório:
+
+<nome-do-repositório>
+                                      |
+                                      |--<avaliacoes>
+                                      |                       |
+                                      |                       |--<avaliacao-01>
+                                      |                       |                           |-avaliacao-01.pdf
+                                      |                       |                           |-avaliacao-01.c
+                                      |                       |-<avaliacao-02>
+                                      |                       |                           |-avaliacao-02.pdf
+                                      |                       |                           |-avaliacao-02.c 
+                                      |--<atividades>
+                                      |                       |-<atividade-01>
+                                      |                       |                         |-atividade01.pdf
+                                      |                       |-<atividade-02>
+                                      |                       |                          |-atividade-02.c
