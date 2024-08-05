@@ -1,0 +1,73 @@
+codigoExc3Q4.txt
+#include <stdio.h>
+
+// Função que exibe os bits de um número
+void exibirBits(unsigned int num) {
+    for (int i = 31; i >= 0; i--) {
+        (num & (1 << i)) ? printf("1") : printf("0");
+        if (i % 4 == 0) printf(" ");
+    }
+    printf("\n");
+}
+
+// Função que realiza operação AND bit a bit
+unsigned int andBitABit(unsigned int num1, unsigned int num2) {
+    return num1 & num2;
+}
+
+// Função que realiza operação OR bit a bit
+unsigned int orBitABit(unsigned int num1, unsigned int num2) {
+    return num1 | num2;
+}
+
+// Função que realiza operação XOR bit a bit
+unsigned int xorBitABit(unsigned int num1, unsigned int num2) {
+    return num1 ^ num2;
+}
+
+// Função que realiza deslocamento à esquerda
+unsigned int deslocamentoEsquerda(unsigned int num, int bits) {
+    return num << bits;
+}
+
+// Função que realiza deslocamento à direita
+unsigned int deslocamentoDireita(unsigned int num, int bits) {
+    return num >> bits;
+}
+
+int main() {
+    unsigned int num1, num2;
+    int bits;
+
+    printf("Digite o primeiro número: ");
+    scanf("%u", &num1);
+
+    printf("Digite o segundo número: ");
+    scanf("%u", &num2);
+
+    printf("Digite o número de bits para deslocamento: ");
+    scanf("%d", &bits);
+
+    printf("Bits do primeiro número: ");
+    exibirBits(num1);
+
+    printf("Bits do segundo número: ");
+    exibirBits(num2);
+
+    printf("AND bit a bit: ");
+    exibirBits(andBitABit(num1, num2));
+
+    printf("OR bit a bit: ");
+    exibirBits(orBitABit(num1, num2));
+
+    printf("XOR bit a bit: ");
+    exibirBits(xorBitABit(num1, num2));
+
+    printf("Deslocamento à esquerda (%d bits): ", bits);
+    exibirBits(deslocamentoEsquerda(num1, bits));
+
+    printf("Deslocamento à direita (%d bits): ", bits);
+    exibirBits(deslocamentoDireita(num1, bits));
+
+    return 0;
+}
