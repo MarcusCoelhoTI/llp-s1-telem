@@ -11,7 +11,7 @@ A **manipulação de bits** desempenha um papel crucial na programação moderna
  R--> AND bit a bit, OR bit a bit, XOR bit a bit, Deslocamento à esquerda e à direita.
 
 4. Exemplo em Linguagem C. Crie um programa  que exibe os bits de um número e realiza operações básicas:
- R--> codigoExc3Q4.txt
+ R--> funcaoDeBits.txt
 
 A manipulação de bits é uma técnica poderosa que permite aos programadores otimizar código, criar algoritmos eficientes e lidar com dados de forma granular¹²³. 🌟
 

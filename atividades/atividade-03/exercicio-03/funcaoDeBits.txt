@@ -1,4 +1,3 @@
-codigoExc3Q4.txt
 #include <stdio.h>
 
 // Função que exibe os bits de um número

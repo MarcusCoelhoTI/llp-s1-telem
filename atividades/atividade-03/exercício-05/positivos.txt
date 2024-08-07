@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int soma = 0; // variável acumuladora
+    int count = 0; // contador de números positivos
+    int i = 1; // contador de loops
+    int num;
+
+    while (i <= 10) {
+        printf("Insira o %dº número: ", i);
+        scanf("%d", &num);
+
+        if (num > 0) { // verifica se o número é positivo
+            soma += num; // soma = soma + num
+            count++; // incrementa o contador de números positivos
+            i++; // incrementa o contador de loops apenas se o número for positivo
+        } else {
+            printf("Número não positivo ignorado! Tente novamente.\n");
+        }
+    }
+
+    printf("A soma dos %d números positivos inseridos é: %d\n", count, soma);
+
+    return 0;
+}
