@@ -1,0 +1,18 @@
+// @Author --Marcus Victor--
+#include <stdio.h>
+
+int main() {
+    float numero[5];
+    float soma;
+    printf("(Não use vígula, use ponto para decimais 'ex.:2.5')");
+	//ler e soma os numeros do array
+    for(int i=0; i<5; i++){
+        printf("\nDigite o %dº número: ", i+1);
+        scanf("%f", &numero[i]);
+        soma += numero[i];
+    }
+    //exibe a soma
+    printf("A soma dos números é: %.2f", soma);
+
+    return 0;
+}
