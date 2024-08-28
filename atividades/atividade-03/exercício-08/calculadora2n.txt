@@ -1,0 +1,17 @@
+#include <stdio.h>
+//@Author Marcus Coelho 28-08-2024
+int main() {
+    int num1;
+    int num2;
+    float res;
+    printf("Digite o 1º número: ");
+    scanf("%d", &num1);
+    printf("\nDigite o 2º número: ");
+    scanf("%d", &num2);
+    printf("\nSoma: %d + %d = %.1f ", num1, num2, res = num1 + num2);
+    printf("\nSubtração: %d - %d = %.1f ", num1, num2, res = num1 - num2);
+    printf("\nMultiplicação: %d x %d = %.1f ", num1, num2, res = num1 * num2);
+    printf("\nDivisão: %d : %d = %.1f ", num1, num2, res = num1 / num2);
+
+    return 0;
+}

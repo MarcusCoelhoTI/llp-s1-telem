@@ -1,0 +1,26 @@
+#include <stdio.h>
+//@Author Marcus Coelho 28-08-2024
+int troca(int num1, int num2){
+    num1 = num2;
+return num1;
+} 
+int main() {
+    int num1, num2;
+    
+    printf("Digite o primeiro número: ");
+    scanf("%d", &num1);
+        printf("Digite o segundo número: ");
+        scanf("%d", &num2);
+    
+    printf("---------------------------");
+    
+    printf("\nValor anterior do primeiro número: %d", num1);
+        printf("\nValor atual do primeiro número: %d", troca(num1,num2));
+        
+    printf("---------------------------");
+    
+    printf("\nValor anterior do segundo número: %d", num2);
+        printf("\nValor atual do segundo número: %d", troca(num2,num1));
+
+    return 0;
+}

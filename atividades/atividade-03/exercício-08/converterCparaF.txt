@@ -1,0 +1,15 @@
+#include <stdio.h>
+//@Author Marcus Coelho 28-08-2024
+int main() {
+    float celsius;
+    float fahrenheit;
+    
+    printf("Inserir graus em celsius: ");
+    scanf("%f", &celsius);
+    printf("\nConversão de celsius para fahrenheit\n");
+    printf("%.1fºC = %.1fºF", celsius, fahrenheit = celsius * 1.8 + 32);
+    
+    
+
+    return 0;
+}
