@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    FILE *arquivo;
+    char linha[100]; // buffer para armazenar a linha de texto
+
+    // Abrir o arquivo no modo de escrita
+    arquivo = fopen("meu_arquivo.txt", "w");
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo!\n");
+        return 1;
+    }
+
+    // Loop para ler e gravar linhas de texto até que o usuário digite "sair"
+    while (1) {
+        printf("Digite uma linha de texto (ou 'sair' para sair): ");
+        fgets(linha, 100, stdin);
+
+        if (strcmp(linha, "sair\n") == 0) {
+            break;
+        }
+
+        // Gravar a linha no arquivo
+        fprintf(arquivo, "%s", linha);
+    }
+
+    // Fechar o arquivo
+    fclose(arquivo);
+
+    // Abrir o arquivo no modo de leitura
+    arquivo = fopen("meu_arquivo.txt", "r");
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo!\n");
+        return 1;
+    }
+
+    // Ler e mostrar cada linha do arquivo
+    printf("Conteúdo do arquivo:\n");
+    while (fgets(linha, 100, arquivo) != NULL) {
+        printf("%s", linha);
+    }
+
+    // Fechar o arquivo
+    fclose(arquivo);
+
+    return 0;
+}
